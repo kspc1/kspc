@@ -1,57 +1,163 @@
-<！医生 html  >
-<   html    lang = “   zh-cn”   >
 
-<头>
-  <   meta    charset = “   utf-8”   >
-  <   meta    name = “   viewport”    content = “   width =设备宽度，初始尺度= 1” />
-  <title>四会市科硕电脑科技< / title >
-  <样式>
-    身体{
-      保证金：0;
-    }
-  </   style   >
-</   head  >
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四会市科硕电脑科技</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://picsum.photos/1600/900?image=1060');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
 
-<身体>
-  < DIV  样式= “
-    背景色：＃f1f1f1;
-    文字平衡：中心；
-    填充：1个PX  ；
-    “  >
-    <  img   alt = “科硕up”   src = “  https：//img.icons8.com/nolan/1600/imac.png ” width =“ 130px” height =“ 80px”>
-  <  p   style = “
-     ></ p >>四会市科硕电脑科技</>
-    </ div ></ >
-    < div = “<   style
-    最大宽度：760 PX ;;
-    保证金：30 PX  Auto；
-    填充：15 PX；
-    线高：1.7 .7;;
-    “ >>
-      < p = “; > </ p ><   style text-align：center;”>你好，朋友！欢迎来到【科硕电脑】 ————懂你的电脑伙伴！</>
+<!-- Header -->
+<header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">四会市科硕电脑科技</h1>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:text-yellow-300 transition duration-300">首页</a>
+            <a href="#about" class="hover:text-yellow-300 transition duration-300">关于我们</a>
+            <a href="#services" class="hover:text-yellow-300 transition duration-300">服务项目</a>
+            <a href="#contact" class="hover:text-yellow-300 transition duration-300">联系我们</a>
+        </nav>
+        <button id="menu-toggle" class="md:hidden text-xl">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-blue-700 md:hidden px-4 pb-4">
+        <a href="#home" class="block py-2 hover:text-yellow-300">首页</a>
+        <a href="#about" class="block py-2 hover:text-yellow-300">关于我们</a>
+        <a href="#services" class="block py-2 hover:text-yellow-300">服务项目</a>
+        <a href="#contact" class="block py-2 hover:text-yellow-300">联系我们</a>
+    </div>
+</header>
 
-    < > </       ><p></P> 
+<!-- Hero Section -->
+<section id="home" class="hero-bg h-screen flex items-center">
+    <div class="container mx-auto text-center px-4 bg-black bg-opacity-40 p-10 rounded-lg backdrop-blur-sm">
+        <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 animate-pulse">专业IT解决方案提供商</h2>
+        <p class="text-xl text-white max-w-2xl mx-auto mb-8">专注企业信息化建设，提供高效稳定的软硬件技术支持。</p>
+        <a href="#contact" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+            立即咨询
+        </a>
+    </div>
+</section>
 
- 
-<
-<专业不冰冷**：技术小哥耐心解答，不堆砌术语，** ：技术小< <p>p>
-<速度有温度**：系统崩溃？60分钟快修，：，<<p>p>
-<**：正品配件明码标价，售后保修全程护航；<p>
-<**：定制办公方案，上门维护省时省力。<< / p >
+<!-- About Us -->
+<section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">关于我们</h2>
+            <p class="max-w-2xl mx-auto text-gray-600">我们是一家专注于为企业客户提供全方位信息技术支持的服务商。</p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+            <img src="https://picsum.photos/id/106/600/400" alt="IT技术人员工作场景照片" class="rounded-lg shadow-md w-full md:w-1/2">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">领先的IT服务商</h3>
+                <p class="mb-4 text-gray-700 leading-relaxed">
+                    四会市科硕电脑科技有限公司成立于多年以前，致力于为中小企业打造安全可靠的信息系统平台，
+                    我们拥有一支经验丰富的工程师团队，涵盖软件开发、网络安全及服务器维护等多个领域。
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>定制化企业管理信息系统</li>
+                    <li>高性能服务器部署与运维</li>
+                    <li>网络安全防护体系建设</li>
+                    <li>员工培训和技术咨询服务</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-<p>< / p>  
+<!-- Services -->
+<section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">我们的服务</h2>
+            <p class="max-w-2xl mx-auto text-gray-600">为您提供一站式企业数字化转型技术服务。</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-l-4 border-blue-500">
+                <i class="fas fa-code text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">软件开发</h3>
+                <p class="text-gray-600">根据客户需求量身定做各类业务管理系统、移动应用程序以及电商平台。</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-l-4 border-green-500">
+                <i class="fas fa-server text-4xl text-green-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">云服务托管</h3>
+                <p class="text-gray-600">帮助企业快速搭建云端数据中心，保障系统的高可用性和扩展能力。</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-l-4 border-purple-500">
+                <i class="fas fa-shield-alt text-4xl text-purple-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">信息安全</h3>
+                <p class="text-gray-600">从防火墙策略制定到漏洞扫描修复，全面保护您的数字资产免受威胁。</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<p> **点击探索，或，或
-<<    img      alt = “ 装b      透明 
-    < /< /div>
-    <      <      div      style = “
-    背景色：＃f1f1f1;
-    文字平衡：中心；
-    填充：10    px；
-    字体大小：13   px  ;
-    “
-    <p> <<p><
-<<    href    “    http：
+<!-- Contact -->
+<section id="contact" class="py-20 bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">联系信息</h2>
+            <p class="max-w-2xl mx-auto opacity-90">有任何疑问？欢迎随时与我们取得联系！</p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-10">
+            <form class="w-full lg:w-1/2 space-y-6">
+                <input type="text" placeholder="姓名 *" required class="w-full p-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-800">
+                <input type="email" placeholder="邮箱地址 *" required class="w-full p-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-800">
+                <textarea rows="5" placeholder="留言内容..." class="w-full p-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400 text-gray-800"></textarea>
+                <button type="submit" class="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-medium rounded shadow transition-colors duration-300">
+                    发送消息
+                </button>
+            </form>
+            <div class="lg:w-1/2 space-y-6">
+                <div class="flex items-start">
+                    <i class="fas fa-map-marker-alt text-yellow-400 mt-1 mr-4 text-xl"></i>
+                    <p><strong>总部地址：</strong>广东省四会市城中区11号</p>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-phone-alt text-yellow-400 mt-1 mr-4 text-xl"></i>
+                    <p><strong>联系电话：</strong>13609657072</p>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-envelope text-yellow-400 mt-1 mr-4 text-xl"></i>
+                    <p><strong>电子邮箱：</strong>852620088@qq.com</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30000!2d112.690!3d23.330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMTknNTAuMCJOIDExMsKwNDInMDIuMCJF!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" class="rounded shadow-inner"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
 
-< / < / body >>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2026 四会市科硕电脑科技有限公司 版权所有</p>
+        <p class="mt-2 text-gray-400 text-sm">粤ICP备XXXXXXXXX号 | 技术支持：<a href="#" class="underline hover:text-yellow-300">科硕官网</a></p>
+    </div>
+</footer>
 
+<script>
+    // Toggle mobile menu
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+    });
+</script>
+
+</body>
+</html>
